@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	font-family: 'rondo';
+	src: url('fonts/rondo/rondo.eot?#') format('eot'),
+		url('fonts/rondo/rondo.woff') format('woff'),
+		url('fonts/rondo/rondo.ttf') format('truetype'),
+		url('fonts/rondo/rondo.svg#rondo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'rondo';
+	font-style: normal;
+	speak: none;
+	/* Enable Ligatures */
+	-webkit-font-feature-settings:"liga","dlig";-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-o-font-feature-settings:"liga","dlig";
+	font-feature-settings:"liga","dlig";
+	text-rendering:optimizeLegibility;
+	}
+
+.icon-email:before {
+	content: "\65\6d\61\69\6c";
+}
+
+.icon-facebook:before {
+	content: "\66\61\63\65\62\6f\6f\6b";
+}
+
+.icon-twitter:before {
+	content: "\74\77\69\74\74\65\72";
+}
+
+.icon-googleplus:before {
+	content: "\67\6f\6f\67\6c\65\70\6c\75\73";
+}
+
+.icon-lastfm:before {
+	content: "\6c\61\73\74\66\6d";
+}
+
+.icon-instagram:before {
+	content: "\69\6e\73\74\61\67\72\61\6d";
+}
+
+* {
+	outline: 1px solid black;
+}
+
+header {
+	height: 64px;
+	background-color: #f2f2f2;
+}
+
+#logo {
+	position: relative;
+	width: 150px;
+	left: 30px;
+	text-align: center;
+	display: inline-block;
+	line-height: 64px;
+}
+
+.primary-links {
+	position: absolute;
+	text-align: center;
+	width: 200px;
+	margin-left: -100px;
+	left: 50%;
+	display: inline-block;
+	line-height: 64px;
+}
+
+#sign-in {
+	position: absolute;
+	width: 80px;
+	display: inline-block;
+	right: 40px;
+	text-align: center;
+	line-height: 64px;
+}
+
+#main {
+	position: relative;
+}
+
+#needle {
+	display: inline-block;
+	width: 100%;
+}
+
+#main h2 {
+	position: absolute;
+	font-size: 50px;
+	top: 20px;
+	left: 30px;
+	color: white;
+	opacity: .70;
+}
+
+#content-container {
+	margin-bottom: 50px;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'brandon-grotesque', "Brandon Grotesque", sans-serif;
+	margin-top: 35px;
+	margin-bottom: 20px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+h4 {
+	text-align: center;
+	font-family: 'brandon-grotesque', "Brandon Grotesque", sans-serif;
+	box-sizing: border-box;
+	padding: 5px 0px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.content {
+	position: relative;
+	display: inline-block;
+	margin: 0px 100px 0px 100px;
+	width: 300px;
+	left: 30px;
+}
+
+.content-images {
+	border-radius: 15%;
+}
+
+#quotes-container {	
+	background-color: #f2f2f2;
+	height: 200px;
+}
+
+.quotes {
+	position: absolute;
+	display: inline-block;
+	width: 30%;
+	box-sizing: border-box;
+	padding: 10px 50px 10px 50px;
+	margin-top: 20px;	
+}
+
+#p-left {
+	left: 12%;
+}
+
+#p-right {
+	right: 12%;
+	width: 35%;
+}
+
+#contact-container {
+	background-color: #336699;
+	opacity: .80;
+	height: 80px;
+	position: relative;
+}
+
+#contact-links {
+	position: absolute;
+	margin: -15px 0 0 -350px;
+	width: 700px;
+	height: 30px;
+	top: 50%;
+	left: 50%;
+}
+
+#email-link {
+	margin-right: 30px;
+	display: inline-block;
+}
+
+#phone-link {
+	margin-right: 30px;
+	display: inline-block;
+}
+
+#social-links {
+	display: inline-block;
+}
+
+#social-links a {
+	margin-right: 10px;
+}
+
+footer {
+	background-color: #EBFFFF;
+	height: 40px;
+}
