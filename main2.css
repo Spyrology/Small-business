@@ -228,7 +228,7 @@ h4 {
 .quotes {
 	position: absolute;
 	display: inline-block;
-	width: 440px%;
+	width: 440px;
 	box-sizing: border-box;
 	padding: 10px 40px 20px 40px;
 	font-size: 18px;	
